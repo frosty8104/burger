@@ -1,13 +1,29 @@
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-hamburger.addEventListener("click", mobileMenu);
+/* onst burger = document.querySelector(".burger");
+const menu = document.querySelector("ul");
+burger.addEventListener("click", mobileMenu);
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    burger.classList.toggle("active");
+    menu.classList.toggle("active");
 }
-const navLink = document.querySelectorAll(".nav-link");
-navLink.forEach(n => n.addEventListener("click", closeMenu));
+const link = document.querySelectorAll("a");
+link.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
+    burger.classList.remove("active");
+    menu.classList.remove("active");
+} */
+
+/* function myFunction() {
+    var x = document.getElementById("nav");
+    if (x.className === "topnav") {
+        x.className += "responsive";
+    } else {
+        x.className = "topnav";
+    }
+} */
+
+const burger = document.querySelector(".burger");
+const links = document.querySelector(".links");
+
+burger.addEventListener('click', () => {
+    links.classList.toggle('active')
+})
